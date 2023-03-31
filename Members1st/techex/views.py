@@ -8,7 +8,7 @@ from rest_framework import filters
 
 # view for endpoint to allow search by Id field
 class IdSearchList(generics.ListAPIView):
-    search_fields = ['Id']
+    search_fields = ['=Id']
     filter_backends = (filters.SearchFilter,)
     queryset = Entry.objects.all()
     serializer_class = EntrySerializer
@@ -16,7 +16,7 @@ class IdSearchList(generics.ListAPIView):
 
 # view for endpoint to allow search by account number
 class AccountSearchList(generics.ListAPIView):
-    search_fields = ['AccountNumber']
+    search_fields = ['=AccountNumber']
     filter_backends = (filters.SearchFilter,)
     queryset = Entry.objects.all()
     serializer_class = EntrySerializer
