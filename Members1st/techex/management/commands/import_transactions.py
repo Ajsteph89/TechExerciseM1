@@ -5,7 +5,7 @@ from django.core.management.base import BaseCommand
 # import daily file into database
 
 class Command(BaseCommand):
-    help = 'Closes the specified poll for voting'
+    help = 'Get the transactions from json'
 
     def handle(self, *args, **options):
         f = open('transactions.json')
