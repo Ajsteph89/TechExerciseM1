@@ -8,7 +8,7 @@ This is a technical exercise provided by Members 1st.  For exposing a daily data
 Navigate to the project directory:
 
 ```bash
-    cd Members1st
+  cd Members1st
 ```
 
 Set up a virtual environment for the project using pipenv. If you don't have pipenv installed, you can install it using pip:
