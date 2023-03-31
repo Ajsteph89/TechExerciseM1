@@ -2,6 +2,7 @@ import json
 from techex.models import Entry
 from django.core.management.base import BaseCommand
 
+# import daily file into database
 
 class Command(BaseCommand):
     help = 'Closes the specified poll for voting'
